@@ -115,3 +115,48 @@ function ghf(a:addd){
     a.name;
     a.getDetails;
 }
+
+//generics
+
+//generic function
+function log<T>(val:T){
+    console.log(val);
+}
+log(12);
+log<string>("heyy");
+log(22);
+
+function lol<H>(a:H, b:string,c:number){
+
+}
+lol<string>("hii","hello",24);
+
+//generic interfaces
+interface hello<T>{
+    name:string;
+    age:number;
+    key:T;
+}
+function kill(a:hello<string>){
+
+}
+kill({name:"hii",age:54,key:"ghj"});
+
+//generic classes
+class Hello<T>{
+    constructor(public key:T){
+
+    }
+}
+let b1=new Hello<string>("heyy");
+let b2=new Hello<number>(24);
+console.log(b1,b2);
+
+//Type Assertion & type casting
+let x:any=29;
+(<number>x).toString;
+(x as number).toString;
+
+let l=Number("98");
+console.log(typeof l);
+

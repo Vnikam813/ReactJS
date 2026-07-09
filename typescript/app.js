@@ -45,5 +45,57 @@ let h;
 let i = 10; //this checks and datatype of variable 
 //Type Annotation
 let j; //data type is decided
-//interfaces and type Aliases
+function bcd(obj) {
+    obj.age;
+    obj.name;
+}
+function cd(obj) {
+    obj.age;
+    obj.email;
+    obj.name;
+}
+function def(obj) {
+    obj.email;
+    obj.name;
+}
+function add(obj) {
+}
+add("hii");
+add(47);
+add(null);
+function ghf(a) {
+    a.email;
+    a.name;
+    a.getDetails;
+}
+//generics
+//generic function
+function log(val) {
+    console.log(val);
+}
+log(12);
+log("heyy");
+log(22);
+function lol(a, b, c) {
+}
+lol("hii", "hello", 24);
+function kill(a) {
+}
+kill({ name: "hii", age: 54, key: "ghj" });
+//generic classes
+class Hello {
+    key;
+    constructor(key) {
+        this.key = key;
+    }
+}
+let b1 = new Hello("heyy");
+let b2 = new Hello(24);
+console.log(b1, b2);
+//Type Assertion & type casting
+let x = 29;
+x.toString;
+x.toString;
+let l = Number("98");
+console.log(typeof l);
 //# sourceMappingURL=app.js.map
